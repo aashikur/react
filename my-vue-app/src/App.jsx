@@ -77,12 +77,17 @@ function Salami({name, amount = '20'}){
 
 export default function toDu(){
 
+const tt = 40;
 
   return (<>
-    
-     <ToDo task='Sleep 8h :' isDone={true}></ToDo>
-     <ToDo task='Code 6h Today:' isDone={false}></ToDo>
-     <ToDo task='Create Videos:' isDone={false}></ToDo>
+
+
+
+  
+{/*     
+     <ToDo task='Sleep 8h :' isDone={true} time={'50'}></ToDo>
+     <ToDo task='Code 6h Today:' isDone={false} time={tt}></ToDo>
+     <ToDo task='Create Videos:' isDone={false} time={tt}></ToDo> */}
 
 
       {/* <h1>Hello There,</h1>
