@@ -1,6 +1,7 @@
 import './App.css'
 import Counter from './Counter'
 import ShowText from './ShowText'
+import UserList from './UserList'
 
 function App() {
   return(<>
@@ -8,8 +9,11 @@ function App() {
     <Counter></Counter> 
 
 
-  <h1>Task 01 ~ Toggle Text</h1>
+  <h1>Task 02 ~ Toggle Text</h1>
      <ShowText></ShowText>
+
+    <h1>Task 03 ~ Api Call</h1>
+    <UserList></UserList>
   </>)
 }
 
