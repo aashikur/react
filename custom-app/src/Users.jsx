@@ -10,7 +10,7 @@ export default function User({FetchUser}){
     }
 
     const users = use(FetchUser);
-    console.log(users);
+    // console.log(users);
     return(<>
       <div style={theStyle}>
       <h3>USER : {users.length}</h3>
