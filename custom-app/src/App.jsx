@@ -6,6 +6,7 @@ import { Suspense, useState } from 'react';
 import User from './Users'
 import Friends from './Friends'
 import Posts from './Posts'
+import Players from './Players'
 
 
 //  User fetch ~ Regular
@@ -57,7 +58,13 @@ function App() {
 // ==================================================================================================
 
 function App2(){
-    return (<><h3>Hello</h3></>)
+    return (<>     
+    
+    <Suspense fallback={<h3 className='card'>Player Loding</h3>}>
+    <Players></Players>
+    </Suspense>
+    
+    </>)
 }
 
 export default App2 
