@@ -1,26 +1,21 @@
-
-
-
-
+import { Suspense } from "react";
 
 export default function UserList() {
-
-
-    return (<>
+  return (
+    <>
+      <Suspense fallback={<Loader />}>
         <div className="wrapper">
-            <h2>This is user list:</h2>
-        </div> 
-        <Loader></Loader>
-    </>)
+          <h2>This is user list:</h2>
+        </div>
+      </Suspense>
+    </>
+  );
 }
 
-
-function Loader(){
-    return (<>
-    
+function Loader() {
+  return (
     <div className="wrapper">
-    <h1>Loading...</h1> 
+      <h1>Loading...</h1>
     </div>
-    
-    </>)
+  );
 }
