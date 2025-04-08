@@ -7,19 +7,6 @@ import User from './Users'
 import Friends from './Friends'
 import Posts from './Posts'
 
-// fetch('https://jsonplaceholder.typicode.com/users')
-// .then(res => res.json())
-// .then(data => userData(data));
-
-
-// const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
-// .then(res =>res.json());
-
-// const fetchFriends = async ()=>{
-// const res = await fetch('https://jsonplaceholder.typicode.com/users')
-// return res.json();
-// }
-
 
 //  User fetch ~ Regular
 const FetchUser = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json());
@@ -36,7 +23,6 @@ const fetchFriends = async () => {
 const FetchPost = fetch('https://jsonplaceholder.typicode.com/posts').then(res => res.json());
 
 function App() {
-
   const friendPromise = fetchFriends();
 
   return (
@@ -68,14 +54,10 @@ function App() {
 }
 
 
+// ==================================================================================================
 
+function App2(){
+    return (<><h3>Hello</h3></>)
+}
 
-
-
-
-
-
-
-
-
-export default App 
+export default App2 
