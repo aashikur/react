@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.user {
+  border: 1px solid rgb(114, 250, 173);
+  padding: 20px;
+  width: 100%;
+  margin: 10px auto;
+}
