@@ -68,7 +68,7 @@ button:focus-visible {
 }
 
 
-.bat {
+.bat,.card {
   border: 1px solid salmon;
   padding: 20px;
   width: 100%;
