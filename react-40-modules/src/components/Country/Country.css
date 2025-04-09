@@ -1,0 +1,39 @@
+.country {
+    background: #317eff;
+    margin: 2px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+  }
+  
+.country-visited{
+    background: #6ea3ff;
+
+}
+
+.visited-btn {
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: #000000a3;
+    cursor: pointer;
+
+}
+.visited-btn:hover{
+    opacity: .8;
+}
+
+.visited-btn:focus{
+    border:1px solid white;
+    opacity: .8;
+
+}
+
+.visited-done-btn {
+    background-color: gray;
+}
+
+
+.visited-country{
+    color:black;
+}
