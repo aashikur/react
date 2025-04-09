@@ -6,3 +6,8 @@
 }
 
 
+.VisitedFlg img{
+    width: 50px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
