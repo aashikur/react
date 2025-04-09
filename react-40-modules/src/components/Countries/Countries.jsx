@@ -39,7 +39,7 @@ const Countries = ({ countriesPromise }) => {
                 <div className='VisitedFlg'>
                                     
                 {
-                  visitedFlags.map(visitedFlag => <img src={visitedFlag}></img>)
+                  visitedFlags.map((visitedFlag,index) => <img key={index} src={visitedFlag}></img>)
                 }
 
                 </div>

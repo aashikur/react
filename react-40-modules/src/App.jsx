@@ -25,7 +25,7 @@ function App() {
 }
 
 function Load(){
-  return <h1>Message Country...</h1>
+  return <h1>Country is Loading...</h1>
 }
 
 export default App

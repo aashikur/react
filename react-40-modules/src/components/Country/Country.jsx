@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './Country.css'
 // const Country =(country) =>{
     function Country({country,handleVisitedCountries,handleVisitedFlags}){
-    const [visited, setVisited] = useState(false)
+    const [visited, setVisited] = useState(false) 
+    // eslint-disable-next-line no-constant-condition
+    if(0) console.log(handleVisitedCountries)
     const Visited = ()=>{
         setVisited(!visited)
         
@@ -10,7 +12,7 @@ import './Country.css'
 
     return (
         <div className={`country ${visited ? 'country-visited' : ''}`}>
-            <p className={visited && 'visited-country'}> <b> Country Name:</b> {country.name.common}</p>
+            <p className={visited ? 'visited-country':''}> <b> Country Name:</b> {country.name.common}</p>
             <p><img width={100} src={country.flags.png} alt="" /></p>
             <p>Independence: {country.independent ? 'Yes' : 'No'} </p>
             <button className={ `visited-btn ${visited ? 'visited-done-btn':''} `} onClick={Visited}>Visited</button>
