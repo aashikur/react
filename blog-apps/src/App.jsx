@@ -29,11 +29,11 @@ function App() {
     <>
       <Navbar></Navbar>
 
-      <div className="main-container flex py-10 gap-10">
-        <div className="left-side w-8/12">
+      <div className="main-container md:flex py-10 gap-10">
+        <div className="left-side md:w-8/12">
           <Blogs handleReadTime={handleReadTime} handleBookMarks={handleBookMarks}></Blogs>
         </div>
-        <div className="right-side w-4/12">
+        <div className="right-side md:w-4/12">
           <div className='sticky top-0'>
             <h2 className='border rounded-md bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 font-bold text-xl px-10 py-5 mb-2'>
               Activity: 
