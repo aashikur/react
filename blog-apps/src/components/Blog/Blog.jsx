@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoBookmarkSharp } from "react-icons/io5";
 
-const Blog = ({ blog, handleBookMarks }) => {
+const Blog = ({ blog, handleBookMarks,handleReadTime }) => {
 
     const { title, country, hashtag } = blog
     // console.log(blog)
@@ -21,7 +21,7 @@ const Blog = ({ blog, handleBookMarks }) => {
                     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                     <div className="card-actions flex justify-end items-center">
                         <div className='grow'>
-                            <div className="btn btn-success">Mark As Read</div>
+                            <div onClick={()=>handleReadTime(blog)} className="btn btn-success">Mark As Read</div>
                         </div>
 
                         {

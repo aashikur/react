@@ -2,10 +2,10 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div>
-<div className="navbar bg-base-100 shadow-sm">
+        <div className=''>
+<div className="navbar bg-base-100 shadow-sm border-gray-700 border rounded-2xl mt-5 sticky top-0">
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl bg-amber-900 hover:bg-amber-800">daisyUI</a>
+    <a className="btn btn-ghost text-xl ">DailyBlogs</a>
   </div>
   <div className="flex-none">
     <div className="dropdown dropdown-end">
