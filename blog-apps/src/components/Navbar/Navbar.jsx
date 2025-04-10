@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="w-10 rounded-full">
           <img
             alt="Tailwind CSS Navbar component"
-            src="src/assets/profile.jpg" />
+            src="https://i.ibb.co.com/HfxXLvsV/01-Copy.jpg" />
         </div>
       </div>
       <ul
