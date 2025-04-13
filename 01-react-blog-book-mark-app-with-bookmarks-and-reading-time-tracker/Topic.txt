@@ -1,0 +1,47 @@
+1. React Basics
+Components: You are creating functional components like Navbar, Blogs, and Blog.
+Props: Passing data and functions between components using props (e.g., handleBookMarks, handleReadTime).
+State Management: Using useState to manage state (theTitle, readTime).
+2. React Hooks
+useState: Managing local state for bookmarks and reading time.
+useEffect: Fetching data from blogs.json in the Blogs component.
+3. Event Handling
+Handling events like button clicks (onClick) to trigger functions (handleBookMarks, handleReadTime).
+4. Conditional Rendering
+Using conditional logic for styling (index % 2 ? 'odd-class' : 'even-class').
+Dynamically rendering bookmarks and reading time.
+5. Data Fetching
+Fetching JSON data from a local file (blogs.json) using fetch in the Blogs component.
+6. Component Composition
+Breaking the UI into reusable components (Navbar, Blogs, Blog).
+Composing components together in App.jsx.
+7. Tailwind CSS
+Styling components using Tailwind CSS classes.
+Using utilities like bg-gradient-to-r, rounded-md, and border.
+8. React Icons
+Using the react-icons library for icons (e.g., IoBookmarkSharp).
+9. JSON Data Handling
+Working with structured JSON data (blogs.json) to populate the UI dynamically.
+10. State Updates
+Adding and removing items from an array in state (setTheTitle with filter and spread operator).
+Calculating derived values (e.g., converting readTime from seconds to minutes and seconds).
+11. Responsive Design
+Using Tailwind's grid system (grid-cols-1, md:grid-cols-2) for responsive layouts.
+12. Vite
+Setting up a React project with Vite for fast development and HMR (Hot Module Replacement).
+13. DaisyUI
+Using DaisyUI components (e.g., card, badge, btn) for pre-styled UI elements.
+14. File and Folder Structure
+Organizing components into folders (Navbar, Blogs, Blog).
+Keeping assets like images in a separate folder (assets).
+15. ES6+ Features
+Destructuring: Extracting properties from objects (e.g., { title, ID, reading_time }).
+Arrow Functions: Writing concise functions (e.g., Blogs.map((blog) => ...)).
+Template Literals: Dynamically constructing strings (e.g., Reading Time-(${Math.round(readTime / 60)}m)).
+16. Debugging
+Using console.log to debug state updates and function calls.
+17. Git and Version Control
+Using .gitignore to exclude unnecessary files (e.g., node_modules, dist).
+18. JSX
+Writing HTML-like syntax in JavaScript to define the UI.
+Embedding JavaScript expressions in JSX ({theTitle.length}, {Math.round(readTime / 60)}).

@@ -1,0 +1,16 @@
+react-vite-component-practice
+
+Summary of Topics Learned:
+
+Setting up a React project with Vite.
+Creating and styling React components (Actor, Singer, ToDo, etc.).
+Using props to pass data to components.
+Conditional rendering in React (if-else, ternary operators, logical operators).
+Mapping over arrays to dynamically render lists.
+Inline and external CSS styling for components.
+Using @keyframes for animations and media queries for responsiveness.
+Organizing reusable components and managing project structure
+
+
+
+summary the topic i learn this practic season, short point, and give me a title for this folder use '-' in title instant of space

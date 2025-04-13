@@ -1,0 +1,9 @@
+Key Points You Can Learn:
+React Component Structure: The Countries component demonstrates how to structure a React functional component with props and state.
+State Management: Usage of useState to manage visitedCountries and visitedFlags.
+Dynamic Rendering: Mapping over arrays (visitedCountries and countries) to dynamically render lists and images.
+Event Handling: Functions like handleVisitedCountries and handleVisitedFlags show how to handle user interactions and update state.
+Props Passing: Passing functions (handleVisitedCountries, handleVisitedFlags) as props to child components (Country).
+CSS Integration: The component imports a CSS file (Countries.css) for styling.
+Suggested Folder Name:
+CountriesFeature

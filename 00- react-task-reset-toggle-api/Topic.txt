@@ -1,0 +1,11 @@
+State Management: Learned how to use useState for managing component states in React.
+Event Handling: Implemented button click events to modify state (e.g., increment, decrement, reset).
+Conditional Rendering: Used state to toggle visibility of elements dynamically.
+Suspense and Fallback: Explored React.Suspense for handling asynchronous operations with a fallback loader.
+Component Composition: Practiced breaking down the UI into reusable components.
+Styling: Applied CSS for layout and design consistency.
+aashikur
+base on this give me a title of this folder
+
+GitHub Copilot
+Title: react-task-reset-toggle-api
