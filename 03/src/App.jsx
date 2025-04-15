@@ -16,7 +16,7 @@ const App = () => {
   
   return (
 
-    <div className='w-4/5 mx-auto'>
+    <div className='border border-gray-300'>
       <Navbar></Navbar>
     </div>
   );
