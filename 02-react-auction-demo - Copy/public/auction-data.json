@@ -1,0 +1,65 @@
+[
+  {
+    "id": 8,
+    "title": "Handcrafted Wooden Bowl",
+    "description": "Beautifully carved wooden bowl made from sustainable materials.",
+    "currentBidPrice": 45.00,
+    "timeLeft": "8h 15m",
+    "bidsCount": 10,
+    "image": "https://i.ibb.co.com/DDHWPdY5/Bid1-min.png"
+  },
+  {
+    "id": 9,
+    "title": "Vintage Vinyl Record",
+    "description": "Classic rock album in excellent condition, perfect for collectors.",
+    "currentBidPrice": 75.25,
+    "timeLeft": "3d 4h",
+    "bidsCount": 18,
+    "image": "https://i.ibb.co.com/nNC17Syw/Bid2-min.png"
+  },
+  {
+    "id": 10,
+    "title": "Luxury Fountain Pen",
+    "description": "Elegant fountain pen with gold-plated nib and leather case.",
+    "currentBidPrice": 120.00,
+    "timeLeft": "1h 30m",
+    "bidsCount": 25,
+    "image": "https://i.ibb.co.com/wr7yw01y/Bid3-min.png"
+  },
+  {
+    "id": 11,
+    "title": "Smart Fitness Tracker",
+    "description": "Track your fitness goals with this sleek and modern device.",
+    "currentBidPrice": 95.99,
+    "timeLeft": "7h 10m",
+    "bidsCount": 20,
+    "image": "https://i.ibb.co.com/XfX3qpwD/Bid4-min.png"
+  },
+  {
+    "id": 12,
+    "title": "Handmade Ceramic Vase",
+    "description": "Unique ceramic vase with intricate hand-painted designs.",
+    "currentBidPrice": 60.50,
+    "timeLeft": "2d 5h",
+    "bidsCount": 15,
+    "image": "https://i.ibb.co.com/NghWb0h0/Bid5-min.png"
+  },
+  {
+    "id": 13,
+    "title": "Professional DSLR Camera",
+    "description": "High-resolution DSLR camera with multiple lenses included.",
+    "currentBidPrice": 850.00,
+    "timeLeft": "5d 3h",
+    "bidsCount": 40,
+    "image": "https://i.ibb.co.com/pv6PzXwj/Bid6-min.png"
+  },
+  {
+    "id": 14,
+    "title": "Antique Silver Necklace",
+    "description": "Exquisite silver necklace with intricate vintage design.",
+    "currentBidPrice": 200.00,
+    "timeLeft": "9h 45m",
+    "bidsCount": 22,
+    "image": "https://i.ibb.co.com/gLc3hx4m/Bid7-min.png"
+  }
+]
