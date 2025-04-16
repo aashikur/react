@@ -1,0 +1,42 @@
+[
+    {
+      "plan_id": "P001",
+      "plan_name": "Monthly Plan",
+      "duration": "1 Month",
+      "price_bdt": 1500,
+      "description": "Perfect for beginners or short-term visitors. Enjoy full access to the gym with all basic facilities.",
+      "features": [
+        "Access to all equipment",
+        "Free locker",
+        "Basic workout plan"
+      ]
+    },
+    {
+      "plan_id": "P002",
+      "plan_name": "Quarterly Plan",
+      "duration": "3 Months",
+      "price_bdt": 4000,
+      "description": "A great value plan for consistent trainees looking to build a routine with professional guidance.",
+      "features": [
+        "Access to all equipment",
+        "Personal trainer (1 session/month)",
+        "Free locker",
+        "Custom workout plan"
+      ]
+    },
+    {
+      "plan_id": "P003",
+      "plan_name": "Annual Plan",
+      "duration": "12 Months",
+      "price_bdt": 14000,
+      "description": "Our most cost-effective plan for serious fitness enthusiasts. Get exclusive benefits and personalized care.",
+      "features": [
+        "Unlimited access",
+        "Personal trainer (2 sessions/month)",
+        "Diet consultation",
+        "Custom workout plan",
+        "Free gym merchandise"
+      ]
+    }
+  ]
+  

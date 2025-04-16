@@ -26,7 +26,7 @@ const Navbar = () => {
                 <ul className={`
                      ${MenuOpen? 'left-0':'left-100'}
                      absolute
-                     top-15
+                     top-12
                      left-0
                      -z-10
                      px-4
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </ul> 
                 <div className={`
                     ${!MenuOpen? 'opacity-0':'opacity-70 '}
-                    bg-black absolute top-15 left-0 h-screen w-full backdrop-blur-2xl -z-20 duration-200 transition-opacity lg:hidden
+                    bg-black absolute top-12 left-0 h-screen w-full backdrop-blur-2xl -z-20 duration-200 transition-opacity lg:hidden
                     `}>
 df
                 </div>
