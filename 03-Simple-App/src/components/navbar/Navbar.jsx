@@ -13,7 +13,7 @@ const navbarItems = [
 
 
 const Navbar = () => {
-    const myMenu = navbarItems.map(route => <Link route={route}></Link>);
+    const myMenu = navbarItems.map((route,index) => <Link key={index} route={route}></Link>);
 
     const [MenuOpen, setMenuOpen] = useState(false)
 
