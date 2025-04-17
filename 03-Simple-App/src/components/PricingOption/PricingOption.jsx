@@ -12,14 +12,14 @@ const PricingOption = ({pricingPromise}) => {
                 {
                     PriceingData.map((card,index) => 
                     
-                <div className="single-card">
+                <div key={index} className="single-card flex flex-col">
                     <div>
                     <span className='badge badge-warning text-white '>1 month</span>
-                    <h1 className='text-2xl'>{card.plan_name}</h1> 
+                    <h1 className='text-2xl mt-3'>{card.plan_name}</h1> 
                     <p>$254/month</p>
                     
                     </div> 
-                    <ul className='mt-3'>
+                    <ul className='mt-3 flex-1'>
                         {
                             card.features.map(feathers => 
                             <li className='flex gap-2 mb-1'>

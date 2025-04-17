@@ -19,12 +19,12 @@ const Navbar = () => {
 
     return (
         <div className='flex justify-between w-4/5 mx-auto py-3'>
-            <div>
+            <div className='w-full overflow-x-hidden menu-container'>
                 <div onClick={() => { setMenuOpen(!MenuOpen) }} className='cursor-pointer flex gap-3'>
                     {MenuOpen ? <X /> : <AlignJustify />}  <h1>Menu</h1>
                 </div>
                 <ul className={`
-                     ${MenuOpen? 'left-0':'left-100'}
+                     ${MenuOpen? 'left-0 z-30':'opacity-0 -z-100'}
                      absolute
                      top-12
                      left-0
@@ -40,8 +40,8 @@ const Navbar = () => {
                     {myMenu}
                 </ul> 
                 <div className={`
-                    ${!MenuOpen? 'opacity-0':'opacity-70 '}
-                    bg-black absolute top-12 left-0 h-screen w-full backdrop-blur-2xl -z-20 duration-200 transition-opacity lg:hidden
+                    ${!MenuOpen? 'opacity-0 -z-20':'opacity-70 z-20'}
+                    bg-black absolute top-12 left-0 h-screen w-full backdrop-blur-2xl duration-200 transition-opacity lg:hidden
                     `}>
 df
                 </div>
