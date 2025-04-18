@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <div className='flex justify-between w-4/5 mx-auto py-3'>
-            <div className='w-full overflow-x-hidden menu-container'>
+            <div className='menu-container'>
                 <div onClick={() => { setMenuOpen(!MenuOpen) }} className='cursor-pointer flex gap-3'>
                     {MenuOpen ? <X /> : <AlignJustify />}  <h1>Menu</h1>
                 </div>

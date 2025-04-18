@@ -1,0 +1,48 @@
+[
+    {
+      "name": "Alice",
+      "roll": 1,
+      "marks": {
+        "physics": 85,
+        "math": 90,
+        "chemistry": 88
+      }
+    },
+    {
+      "name": "Bob",
+      "roll": 2,
+      "marks": {
+        "physics": 78,
+        "math": 82,
+        "chemistry": 80
+      }
+    },
+    {
+      "name": "Charlie",
+      "roll": 3,
+      "marks": {
+        "physics": 92,
+        "math": 88,
+        "chemistry": 91
+      }
+    },
+    {
+      "name": "Diana",
+      "roll": 4,
+      "marks": {
+        "physics": 70,
+        "math": 75,
+        "chemistry": 72
+      }
+    },
+    {
+      "name": "Ethan",
+      "roll": 5,
+      "marks": {
+        "physics": 88,
+        "math": 94,
+        "chemistry": 90
+      }
+    }
+  ]
+  

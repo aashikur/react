@@ -2,10 +2,13 @@ import React, { Suspense } from 'react';
 import './App.css'
 import Navbar from './components/navbar/navbar';
 import PricingOption from './components/PricingOption/PricingOption';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import axios from 'axios';
+import MarksChart from './components/ResultsChart/MarksChart/MarksChart';
 
 
 const pricingPromise = fetch('pricingData.json').then(res => res.json())
+const marksPromise = axios.get('marksData.json')
 const studentData = [
   {
     name: "Alice",
@@ -48,20 +51,22 @@ const App = () => {
 
       <main>
         <Suspense fallback={<span className="loading loading-spinner text-primary"></span>}>
-          <PricingOption pricingPromise={pricingPromise} /> 
+          <PricingOption pricingPromise={pricingPromise} />
         </Suspense>
-      </main> 
+      </main>
 
-    <div className='py-10 border my-5'>
-      <h1 className='text-center font-4xl font-semibold'>Chart & Diagram</h1>
-      <LineChart width={400} height={200} data={studentData}>
-        <Line type="monotone" dataKey="math" stroke="#8884d8" />
-      </LineChart>
-
-    </div>
+      <div className='py-10 border my-5'>
+        <h1 className='text-center font-4xl font-semibold'>Chart & Diagram</h1>
+        <ResponsiveContainer width="100%" height={200}>
+          <LineChart data={studentData}>
+            <Line type="monotone" dataKey="math" stroke="#8884d8" />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
 
       <LineChart
-        width={600}
+
+        width={300}
         height={300}
         data={studentData}
         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
@@ -75,6 +80,13 @@ const App = () => {
         <Line type="monotone" dataKey="physics" stroke="#82ca9d" />
         <Line type="monotone" dataKey="chemistry" stroke="#ffc658" />
       </LineChart>
+
+
+      <Suspense fallback={''}>
+        <MarksChart marksPromise={marksPromise}>
+            
+        </MarksChart>
+      </Suspense>
 
     </React.Fragment>
   );

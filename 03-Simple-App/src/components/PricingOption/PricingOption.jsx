@@ -21,8 +21,8 @@ const PricingOption = ({pricingPromise}) => {
                     </div> 
                     <ul className='mt-3 flex-1'>
                         {
-                            card.features.map(feathers => 
-                            <li className='flex gap-2 mb-1'>
+                            card.features.map((feathers,index) => 
+                            <li key={index} className='flex gap-2 mb-1'>
                                 <TicketCheck className='text-green-700'></TicketCheck> 
                                  {feathers}</li>)
                         }
