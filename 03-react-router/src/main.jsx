@@ -7,6 +7,7 @@ import Root from './components/Root/Root.jsx'
 import Home from './components/Home/Home.jsx'
 import Profile from './components/Profile/Profile.jsx'
 import About from './components/About/About.jsx'
+import Users from './components/Users/Users.jsx'
 
 
 const router = createBrowserRouter([
@@ -15,13 +16,10 @@ const router = createBrowserRouter([
     Component: Root,
     children: [
       {index: true, Component: Home },
-      {path:'profile', Component: Profile}
-
-    ]
-  }, 
-  {
-    path: 'about',
-    Component: About
+      {path:'profile', Component: Profile},
+      {path:'about',Component: About},
+      {path: 'users', loader : ()=> fetch('https://jsonplaceholder.typicode.com/users'), Component: Users,}
+   ]
   },
   {
     path: 'service',
@@ -34,9 +32,12 @@ const router = createBrowserRouter([
   {
      
   }
-])
+]) 
+ 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}></RouterProvider>
   </StrictMode>,
 )
+
+

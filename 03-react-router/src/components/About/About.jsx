@@ -1,10 +1,12 @@
 import React from 'react';
-import Header from '../Header/Header';
+import { useLoaderData } from 'react-router';
 
 const About = () => {
+    const loaderData = useLoaderData();
+    console.log(loaderData);
     return (
         <div> 
-           <Header></Header>
+           
             <h1 className="text-6xl py-30 border border-gray-700 rounded">
                 This is <b className='text-pink-500'>About</b>
             </h1>
