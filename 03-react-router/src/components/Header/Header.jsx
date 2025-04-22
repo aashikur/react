@@ -4,10 +4,10 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div>
-            <div className="p-4 gap-5 border border-gray-700 rounded flex justify-between mx-auto w-4/5">
-                <div>Menu</div>
-                <ul className='nav. flex gap-5 px-10'>
+        <div className='border border-gray-700'>
+            <div className="rounded flex justify-between items-center mx-auto w-4/5">
+                <div className='mr-20'>Menu</div>
+                <ul className='nav. flex gap-5 pr-20 py-3'>
                     {/* <li><a href="/">Home</a></li>
                     <li><a href="/About">About</a></li>
                     <li><a href="/Profile">Profile</a></li>
@@ -15,8 +15,10 @@ const Header = () => {
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='/About'>About</NavLink>
                     <NavLink to='/Profile'>Profile</NavLink>
-                    <NavLink to='/Service'>Service</NavLink>
+                    <NavLink to='/Contact'>Contact</NavLink>
                     <NavLink to='/Users'>Users</NavLink>
+                    <NavLink to='/Users2'>Users2</NavLink>
+                    <NavLink to='/Post'>Post</NavLink>
                 </ul>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { Component, StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
@@ -7,8 +7,14 @@ import Root from './components/Root/Root.jsx'
 import Home from './components/Home/Home.jsx'
 import Profile from './components/Profile/Profile.jsx'
 import About from './components/About/About.jsx'
-import Users from './components/Users/Users.jsx'
+import Contact from './components/Contact/Contact.jsx'
+import Users from './components/User/Users.jsx'
+import Users2 from './components/User/Users2.jsx'
+import UserDetails from './components/UserDetails/UserDetails.jsx'
+import Post from './components/Home/Post/Post.jsx'
+import SinglePost from './components/SinglePost/SinglePost.jsx'
 
+const NormalLoadingPromise = fetch('https://jsonplaceholder.typicode.com/users').then(res=>res.json())
 
 const router = createBrowserRouter([
   {
@@ -18,7 +24,36 @@ const router = createBrowserRouter([
       {index: true, Component: Home },
       {path:'profile', Component: Profile},
       {path:'about',Component: About},
-      {path: 'users', loader : ()=> fetch('https://jsonplaceholder.typicode.com/users'), Component: Users,}
+      {
+        path:'contact', Component: Contact 
+      },
+      {
+        path:'users', Component: Users, loader: () => fetch('https://jsonplaceholder.typicode.com/users')
+      },
+      {
+        path:'users2',
+        element: <Users2 NormalLoadingPromise={NormalLoadingPromise}></Users2> 
+      },
+      {
+        path:'users/:userID',
+        loader: async ({ params }) => {
+          const response = await fetch(`https://jsonplaceholder.typicode.com/users/${params.userID}`);
+          return response;
+        },
+        Component: UserDetails
+      },
+      {
+        path : 'post',
+        Component: Post,
+        loader : () => fetch('https://jsonplaceholder.typicode.com/posts'),
+      }, {
+        path: 'post/:postID',
+        Component: SinglePost,
+        loader: async ({params}) => {
+          const response = fetch(`https://jsonplaceholder.typicode.com/posts/${params.postID}`)
+          return response;
+        }
+      }
    ]
   },
   {
