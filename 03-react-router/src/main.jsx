@@ -53,7 +53,11 @@ const router = createBrowserRouter([
           const response = fetch(`https://jsonplaceholder.typicode.com/posts/${params.postID}`)
           return response;
         }
-      }
+      },
+    //   {
+    //     path: '*',
+    //     element: <h1 className='text-center py-10'>404 Not Found Child</h1>
+    //  }
    ]
   },
   {
@@ -65,8 +69,10 @@ const router = createBrowserRouter([
     Component: App
   },
   {
-     
-  }
+    path: '*',
+    element: <h1 className='text-center py-10'>404 Not Found Main</h1>
+ }
+
 ]) 
  
 createRoot(document.getElementById('root')).render(

@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router';
 
 const SinglePost = () => {
     const SinglePost = useLoaderData();
-    console.log(SinglePost)
+    // console.log(SinglePost) 
     return (
         <div className="bg-gray-800 text-left text-white p-5 rounded-lg max-w-xl mx-auto my-5 shadow-lg">
             <div className="flex items-center mb-4">

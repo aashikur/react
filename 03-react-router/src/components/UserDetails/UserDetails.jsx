@@ -1,8 +1,11 @@
 import React from 'react';
-import { useLoaderData } from 'react-router';
+import { useLoaderData, useParams } from 'react-router';
 
 const UserDetails = () => { 
-    const user  = useLoaderData()
+    const user  = useLoaderData() 
+   
+    const {userID} = useParams();
+    console.log(userID)
 
     // console.log(user);
     let age = (user.id * 16 ) % 100;

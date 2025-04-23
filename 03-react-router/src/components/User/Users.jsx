@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Link, useLoaderData } from 'react-router';
+import UserD2 from '../UserD2/UserD2';
+import SingleUser from './SingleUser';
 
-const Users = () => { 
+const Users = () => {  
+
+
     const userData = useLoaderData();
     // console.log(userData);
     return (
@@ -18,16 +22,12 @@ const Users = () => {
                 <tbody>
                   {
                         userData.map(user => (
-                        <tr className={ `${user.id%2?'bg-gray-800':''} hover:bg-gray-700`}>
-                            <td className="border border-gray-700 px-4 py-2 text-left">{user.name}</td>
-                            <td className="border border-gray-700 px-4 py-2 text-left">{user.email}</td>
-                            <td className="border border-gray-700 px-4 py-2 text-left">{user.phone}</td>
-                            <td className="border border-gray-700 px-4 py-2 text-left">
-                                 <Link to={`/users/${user.id}`} className=''>details..</Link> 
-                            </td>
-                        </tr> 
+                                <SingleUser user={user}></SingleUser>
                         ))
+                        
                     }
+                                         
+
                 </tbody>
             </table>
         </div>
