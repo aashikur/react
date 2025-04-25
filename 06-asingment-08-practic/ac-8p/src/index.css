@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+.container{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background: #f1fcff;
+}

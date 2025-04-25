@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "image": "https://i.ibb.co.com/mpMsxkW/01.jpg",
+    "specialty": "Criminal Law",
+    "experience": "10 years",
+    "fee": 2100,
+    "license": "XYZ1234",
+    "availability": ["Sunday", "Monday", "Tuesday", "Wednesday"]
+  },
+  {
+    "id": "2",
+    "name": "Jane Smith",
+    "image": "https://i.ibb.co.com/nNQdjNjr/02.jpg",
+    "specialty": "Family Law",
+    "experience": "8 years",
+    "fee": 2500,
+    "license": "ABC5678",
+    "availability": ["Tuesday", "Thursday", "Saturday"]
+  },
+  {
+    "id": "3",
+    "name": "Robert Brown",
+    "image": "https://i.ibb.co.com/DDw8s5HV/3.jpg",
+    "specialty": "Corporate Law",
+    "experience": "12 years",
+    "fee": 3600,
+    "license": "CORP2345",
+    "availability": ["Monday", "Wednesday", "Friday", "Sunday", "Saturday"]
+  },
+  {
+    "id": "4",
+    "name": "Emily Clark",
+    "image": "https://i.ibb.co.com/CpY5nKC4/04.jpg",
+    "specialty": "Immigration Law",
+    "experience": "7 years",
+    "fee": 2700,
+    "license": "IMMI8765",
+    "availability": ["Friday", "Saturday", "Sunday", "Monday"]
+  },
+  {
+    "id": "5",
+    "name": "Michael Lee",
+    "image": "https://i.ibb.co.com/B52WZ0tT/05.jpg",
+    "specialty": "Intellectual Property",
+    "experience": "9 years",
+    "fee": 3500,
+    "license": "IP9090",
+    "availability": ["Sunday", "Monday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  },
+  {
+    "id": "6",
+    "name": "Olivia Martinez",
+    "image": "https://i.ibb.co.com/q3Q9PvWK/6.jpg",
+    "specialty": "Environmental Law",
+    "experience": "6 years",
+    "fee": 2900,
+    "license": "ENV6543",
+    "availability": ["Monday", "Wednesday", "Friday"]
+  },
+  {
+    "id": "7",
+    "name": "Daniel Kim",
+    "image": "https://i.ibb.co.com/SXftm7f8/07.jpg",
+    "specialty": "Tax Law",
+    "experience": "11 years",
+    "fee": 3200,
+    "license": "TAX4433",
+    "availability": ["Tuesday", "Thursday", "Saturday", "Sunday"]
+  },
+  {
+    "id": "8",
+    "name": "Sophia Wilson",
+    "image": "https://i.ibb.co.com/s9D7R6hD/08.jpg",
+    "specialty": "Labor Law",
+    "experience": "5 years",
+    "fee": 2600,
+    "license": "LAB3211",
+    "availability": ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday"]
+  },
+  {
+    "id": "9",
+    "name": "James Patel",
+    "image": "https://i.ibb.co.com/9HGJX7Bg/09.jpg",
+    "specialty": "International Law",
+    "experience": "13 years",
+    "fee": 5000,
+    "license": "INTL8888",
+    "availability": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+  },
+  {
+    "id": "10",
+    "name": "Ava Nguyen",
+    "image": "https://i.ibb.co.com/YTFXcfdw/10.jpg",
+    "specialty": "Civil Rights Law",
+    "experience": "4 years",
+    "fee": 2400,
+    "license": "CIV7777",
+    "availability": ["Friday", "Saturday", "Sunday", "Monday"]
+  },
+  {
+    "id": "11",
+    "name": "William Zhang",
+    "image": "https://i.ibb.co.com/bgJBH1xj/11.jpg",
+    "specialty": "Bankruptcy Law",
+    "experience": "10 years",
+    "fee": 3100,
+    "license": "BANK1235",
+    "availability": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  },
+  {
+    "id": "12",
+    "name": "Isabella Gomez",
+    "image": "https://i.ibb.co.com/kVgNrHhF/12.jpg",
+    "specialty": "Real Estate Law",
+    "experience": "8 years",
+    "fee": 2800,
+    "license": "REA9091",
+    "availability": ["Monday", "Tuesday", "Wednesday"]
+  }
+]
