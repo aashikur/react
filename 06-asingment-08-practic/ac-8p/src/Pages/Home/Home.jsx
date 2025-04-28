@@ -1,19 +1,16 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
 import Banner from '../../components/Banner/Banner';
 import BestLawyers from '../../components/BestLawyers/BestLawyers';
+import { useLoaderData } from 'react-router';
 
 
-const Home = () => {
+const Home = () => { 
+    const LawData = useLoaderData(); 
+
     return (
         <div>
-            <Navbar></Navbar>  
             <Banner></Banner> 
-            <BestLawyers></BestLawyers>
-            <Footer></Footer> 
-            
-            
+            <BestLawyers LawData={LawData}></BestLawyers>            
         </div>
     );
 };

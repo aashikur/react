@@ -1,10 +1,11 @@
 import React from 'react';
 import NavLinks from './NavLinks';
+import { Link } from 'react-router';
 
 const Navbar = () => {
 
     return (
-        <div className='bg-[#ececec] shadow-sm'>
+        <div className='bg-[#2d0808] shadow-sm sticky top-0'>
             <div className="navbar container">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -15,10 +16,10 @@ const Navbar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <NavLinks></NavLinks>
-
+ 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">DocBook</a>
+                    <Link to={'/'} className="btn btn-ghost text-xl">DocBook</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-5">

@@ -1,0 +1,56 @@
+import { useEffect, useState } from "react"
+
+const useBooking = () => {
+    const [bookings, setBookings] = useState([]);
+
+    useEffect(()=>{
+        const localBookings = localStorage.getItem('addBookings');
+        if(!localBookings) return setBookings([]);
+        else {
+        const parsedLocalBookings = JSON.parse(localBookings);
+        setBookings(parsedLocalBookings);
+        }
+    },[]) 
+
+    console.log('useeffect', bookings)
+    const getBookingLocal = () => {
+        // This will Check if the 'addBookings' there , and  will return it or []
+        const localBookings = localStorage.getItem('addBookings');
+        if(!localBookings) return [];
+        else {
+        const parsedLocalBookings = JSON.parse(localBookings);
+        return parsedLocalBookings;
+        }
+        
+    }
+    
+    const addBooking = (booking) => {
+        const localBookings = bookings;
+        
+        if(localBookings.length !== 0){ // Changed != to !== for strict comparison
+            let isExist = localBookings.some(book => book.id === booking.id);
+            if(!isExist) {
+                localStorage.setItem('addBookings', JSON.stringify([...localBookings, booking ]));
+                setBookings([...localBookings, booking]); 
+                console.log('added : ', [...localBookings, booking]);
+            }
+        } else {
+            localStorage.setItem('addBookings', JSON.stringify([booking]));
+            setBookings([bookings]);
+            console.log('added : ', bookings)
+
+        }
+    } 
+
+    const removeBooking = (id) => { 
+        const localBookings = bookings;
+
+        localStorage.setItem('addBookings', JSON.stringify(localBookings.filter(book => book.id !== id)));
+        setBookings(localBookings.filter(book => book.id !== id));
+
+    }
+    return { bookings, addBooking, getBookingLocal, removeBooking };
+
+
+}
+export default useBooking;
