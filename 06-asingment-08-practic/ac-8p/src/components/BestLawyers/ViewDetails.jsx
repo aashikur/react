@@ -10,7 +10,7 @@ const ViewDetails = () => {
     // console.log(id.id);
     // console.log(data);
 
-    const {addBooking} = useBooking() 
+    const {addBooking, simpleAddBooking, simpleBookings} = useBooking() 
 
     
 
@@ -34,12 +34,13 @@ const ViewDetails = () => {
             timer: 1000
         });
 
-        // console.log(item.id) 
-        // alert(item.id + ' Added') 
         addBooking(item)
+        simpleAddBooking('item', item);
+
+        console.log('ITEM is :',item);
+        // console.log('Local data  is :',simpleBookings);
     }
 
-    // console.log(item.name)
 
     return (
         <div>
@@ -74,7 +75,7 @@ const ViewDetails = () => {
                             }
                         </div>
 
-                        <Link to={'/booking'}  className='mt-5'>
+                        <Link  className='mt-5'>
                             <button onClick={()=> handleBookAppointment(item)} className='btn  w-full hover:bg-transparent border cursor-pointer border-blue-200 hover:text-blue-500 bg-blue-600 text-white rounded-2xl py-2 text-lg'>
                                 Book An Appointment
                             </button>

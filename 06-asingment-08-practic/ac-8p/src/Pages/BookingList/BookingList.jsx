@@ -4,8 +4,7 @@ import useBooking from '../../hooks/useBooking';
 
 const BookingList = () => { 
     const {bookings, getBookingLocal} = useBooking();  
-    const bookingData = getBookingLocal(); // Fetch booking data 
-    console.log('bookingData USEEFFECT:', bookings)
+    
 
     return (
         <div className='container'>

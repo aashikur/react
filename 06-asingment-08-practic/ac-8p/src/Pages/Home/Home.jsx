@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
-import BestLawyers from '../../components/BestLawyers/BestLawyers';
 import { useLoaderData } from 'react-router';
+import BestLawyers from '../../components/BestLawyers/BestLawyers';
 
 
 const Home = () => { 

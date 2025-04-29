@@ -1,56 +1,93 @@
 import { useEffect, useState } from "react"
 
+/**
+ * Hook to manage bookings, stored in local storage
+ */
 const useBooking = () => {
     const [bookings, setBookings] = useState([]);
-
-    useEffect(()=>{
+    /**
+     * Get bookings from local storage
+     */
+    useEffect(() => {
         const localBookings = localStorage.getItem('addBookings');
-        if(!localBookings) return setBookings([]);
+        if (!localBookings) return setBookings([]);
         else {
-        const parsedLocalBookings = JSON.parse(localBookings);
-        setBookings(parsedLocalBookings);
+            const parsedLocalBookings = JSON.parse(localBookings);
+            setBookings(parsedLocalBookings);
         }
-    },[]) 
+    }, []);
 
-    console.log('useeffect', bookings)
+
+
     const getBookingLocal = () => {
-        // This will Check if the 'addBookings' there , and  will return it or []
         const localBookings = localStorage.getItem('addBookings');
-        if(!localBookings) return [];
+        if (!localBookings) return [];
         else {
-        const parsedLocalBookings = JSON.parse(localBookings);
-        return parsedLocalBookings;
+            const parsedLocalBookings = JSON.parse(localBookings);
+            return parsedLocalBookings;
         }
-        
+
     }
-    
+
+
     const addBooking = (booking) => {
         const localBookings = bookings;
-        
-        if(localBookings.length !== 0){ // Changed != to !== for strict comparison
+
+        if (localBookings.length !== 0) { // Changed != to !== for strict comparison
             let isExist = localBookings.some(book => book.id === booking.id);
-            if(!isExist) {
-                localStorage.setItem('addBookings', JSON.stringify([...localBookings, booking ]));
-                setBookings([...localBookings, booking]); 
+            if (!isExist) {
+                localStorage.setItem('addBookings', JSON.stringify([...localBookings, booking]));
+                setBookings([...localBookings, booking]);
                 console.log('added : ', [...localBookings, booking]);
             }
         } else {
             localStorage.setItem('addBookings', JSON.stringify([booking]));
-            setBookings([bookings]);
-            console.log('added : ', bookings)
-
+            setBookings([booking]);
+            // console.log('added : ', booking);
         }
-    } 
+    }
 
-    const removeBooking = (id) => { 
+    const removeBooking = (ThisId) => {
         const localBookings = bookings;
 
         localStorage.setItem('addBookings', JSON.stringify(localBookings.filter(book => book.id !== id)));
-        setBookings(localBookings.filter(book => book.id !== id));
+        setBookings(localBookings.filter(book => book.id !== ThisId));
 
     }
-    return { bookings, addBooking, getBookingLocal, removeBooking };
+    // ====================================================================================
+
+    const [simpleBookings, setSimpleBookings] = useState([]);
+    useEffect(() => {
+        const simpleSavingBookings = localStorage.getItem('simpleBooked');
+        if (simpleSavingBookings) {
+            setSimpleBookings(JSON.parse(simpleSavingBookings));
+        }
+    }, [])
+
+    const simpleAddBooking =  (newBooked) => {
+        const updateBookings = [...simpleBookings, newBooked];
+        localStorage.setItem('simpleBooked', JSON.stringify(updateBookings));
+        setSimpleBookings(updateBookings);  
+        console.log('simpleAddBooking Triggered', updateBookings);
+    }
+
+
+    // console.log('usebooking simplebooking', simpleBookings)
+    return { bookings, addBooking, getBookingLocal, removeBooking, simpleBookings, simpleAddBooking };
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
+
 export default useBooking;
