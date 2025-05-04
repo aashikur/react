@@ -1,0 +1,32 @@
+import { useEffect, useState } from "react";
+
+const useBooking = () => {
+
+    const [booked, setBooked] = useState(() => {
+        const stored_Booked = localStorage.getItem('Saved_Booked');
+        if (stored_Booked) {
+            return JSON.parse(stored_Booked)
+        }
+        return ([])
+    })
+
+
+    const addBooking = (newBooked) => {
+        const exist = booked.some(item => item.id == newBooked.id)
+        if (!exist) {
+            const updateBooked = [...booked, newBooked]
+            setBooked(updateBooked);
+            localStorage.setItem('Saved_Booked', JSON.stringify(updateBooked))
+        }
+    }
+
+    const removeBooking = (id)=> {
+        const updateBooked = booked.filter(item=> item.id !== id); 
+        console.log('Remove', updateBooked)
+        setBooked(updateBooked);
+        localStorage.setItem('Saved_Booked',JSON.stringify(updateBooked))
+    }
+    return { booked, addBooking, removeBooking };
+};
+
+export default useBooking;
