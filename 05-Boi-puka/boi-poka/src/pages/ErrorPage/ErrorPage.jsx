@@ -8,7 +8,7 @@ const ErrorPage = () => {
                 <p className="text-xl mb-6">Oops! The page you're looking for doesn't exist.</p>
                 <a
                     href="/"
-                    className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                    className="px-6 py-2 bg-red-600 text-white rounded hover:bg-blue-700 transition"
                 >
                     Go Back Home
                 </a>

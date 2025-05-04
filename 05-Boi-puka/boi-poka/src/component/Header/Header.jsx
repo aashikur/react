@@ -13,7 +13,7 @@ const Header = () => {
         <div className="navbar justify-between bg-base-100 shadow-md">
             {/* Logo */}
             <div className="">
-                <a className="btn btn-ghost normal-case text-xl text-pink-500 font-bold underline">BOIPUKA</a>
+                <Link to={'/'} className="btn btn-ghost normal-case text-xl text-pink-500 font-bold underline">BOIPUKA</Link>
             </div>
 
             {/* Menu (hidden on small screens, visible on larger screens) */}

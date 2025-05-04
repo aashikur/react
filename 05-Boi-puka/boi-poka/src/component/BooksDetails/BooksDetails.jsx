@@ -1,8 +1,9 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { addToStoreDB } from '../../utility/addToDB';
+import { Helmet } from 'react-helmet-async';
 
-const BooksDetails = () => { 
+const BooksDetails = () => {
     const { id } = useParams();
     const data = useLoaderData();
     const newData = data.find(item => item.bookId === parseInt(id));
@@ -17,7 +18,7 @@ const BooksDetails = () => {
         bookId,
         yearOfPublishing,
     } = newData;
-    
+
     const handleMarkAsRead = id => {
         // store with Id 
         // where to store
@@ -29,13 +30,17 @@ const BooksDetails = () => {
     }
 
     return (
+
         <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
             {/* Left: Image */}
+            <Helmet>
+                <title>বইপোকা | {bookName}</title>
+            </Helmet>
             <div className="md:w-1/2 flex items-center justify-center p-4">
-                <img 
-                    className="w-full max-h-96 object-contain border border-gray-300 rounded-lg" 
-                    src={image} 
-                    alt="Book Cover Details" 
+                <img
+                    className="w-full max-h-96 object-contain border border-gray-300 rounded-lg"
+                    src={image}
+                    alt="Book Cover Details"
                 />
             </div>
             {/* Right: Details */}
@@ -54,10 +59,10 @@ const BooksDetails = () => {
                     <button
                         onClick={() => addToStoreDB(id)}
                         className="px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition">
-                         Mark as Read
+                        Mark as Read
                     </button>
                     <button className="px-6 py-2 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition">
-                    Wishlist
+                        Wishlist
                     </button>
                 </div>
             </div>
