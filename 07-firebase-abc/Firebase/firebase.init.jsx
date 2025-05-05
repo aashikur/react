@@ -1,25 +1,46 @@
-import { getAuth } from "firebase/auth";
+// ABC2 
 
+// // Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getAuth } from "firebase/auth";
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
+
+// // Your web app's Firebase configuration
+// const firebaseConfig = {
+//   apiKey: "AIzaSyB5S2gt2XhlGqJ0CZPNCtHWqLxFoOvpcLw",
+//   authDomain: "fir-abc2.firebaseapp.com",
+//   projectId: "fir-abc2",
+//   storageBucket: "fir-abc2.firebasestorage.app",
+//   messagingSenderId: "775724329015",
+//   appId: "1:775724329015:web:b27dbfde38ac7c3242b7b2"
+// };
+
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig); 
+
+// const auth = getAuth(app);
+// export default auth;
 
 
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB2_sCPa6UgvODuD9gXRXhjEdkgi9107a8",
-  authDomain: "fir-abc-3e2ab.firebaseapp.com",
-  projectId: "fir-abc-3e2ab",
-  storageBucket: "fir-abc-3e2ab.firebasestorage.app",
-  messagingSenderId: "37542931870",
-  appId: "1:37542931870:web:981001d51afe575cf8ba8f"
+  apiKey: "AIzaSyCQ7OJSLsi0iOCTDCSNxg3cwR5afGMpYCI",
+  authDomain: "fir-abc3.firebaseapp.com",
+  projectId: "fir-abc3",
+  storageBucket: "fir-abc3.firebasestorage.app",
+  messagingSenderId: "259561887186",
+  appId: "1:259561887186:web:672c1a38ed40bb24e1a40b"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Initialize Firebase Authentication and get a reference to the service
-export const auth = getAuth(app);
+const auth = getAuth(app);
+export default auth;

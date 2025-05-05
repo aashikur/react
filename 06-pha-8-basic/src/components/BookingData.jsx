@@ -13,7 +13,7 @@ const BookingData = () => {
                 
                 booked.map((item,index)=> <>
                     <div key={index} className='w-1/3 border-b p-2 my-2 flex justify-between  items-center '>
-                        <h1>{item.name}</h1>
+                        <h1>{index+1} : {item.name}</h1>
                         <button
                         onClick={()=>{removeBooking(item.id)}}
                         className='btn'>Cancel</button>

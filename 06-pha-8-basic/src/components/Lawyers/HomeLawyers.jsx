@@ -10,6 +10,11 @@ const HomeLawyers = () => {
                 {
                     LawyersData.map(item => (
                         <div className="border p-3">
+                           <div className="flex gap-3 ">
+                            <div className='w-20'>
+                                <img className='w-15 h-15 rounded-full' src={item.image} alt="" />
+                            </div>
+                            <div>
                             <h1 className="font-bold">
                                 {item.name}
                             </h1>
@@ -17,6 +22,8 @@ const HomeLawyers = () => {
                             <Link to={`/viewDetails/${item.id}`}>
                                 <button className='btn'>View Details</button>
                             </Link>
+                            </div>
+                           </div>
                         </div>
                     ))
                 }
