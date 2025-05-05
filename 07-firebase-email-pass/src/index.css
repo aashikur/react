@@ -1,0 +1,17 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+.container {
+  @apply mx-auto max-w-[1280px]; 
+}
+
+.test {
+  @apply  text-5xl text-center py-20 border border-gray-100 rounded-lg bg-gray-100;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+}
