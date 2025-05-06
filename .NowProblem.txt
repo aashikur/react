@@ -1,0 +1,13 @@
+React Icon -> 
+crt + backspace dile probs asbe
+
+
+email 07-frebase email problem
+email e user Pass hy na error ase..
+file not found is it exist ?
+
+
+CatNews => giving [] array after filterNews
+problem, :id is giveing :4 and catagory_id is 4 
+so problem :) 
+module 52/7

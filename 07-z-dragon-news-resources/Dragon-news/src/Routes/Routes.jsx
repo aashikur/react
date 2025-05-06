@@ -4,12 +4,24 @@ import {
 } from "react-router";
 import App from "../App";
 import HomeLayout from "../layout/HomeLayout";
+import Home from "../components/pages/Home";
+import CatNews from "../components/pages/CatNews";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: HomeLayout
+    Component: HomeLayout ,
+    children: [
+      {
+        path: "",
+        Component: Home,
+      } ,
+      {
+        path: "catnews/:id",
+        Component: CatNews,
+        loader:  () => fetch('/news.json')
+  }]
   },
   {
     path: "/auth",

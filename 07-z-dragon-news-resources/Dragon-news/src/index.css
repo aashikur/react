@@ -25,3 +25,9 @@
   color: #5b78f8;
   font-size: 40px;
 }
+
+
+.active {
+  background-color: #5b78f8;
+  color: #fff;
+}
