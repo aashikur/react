@@ -22,7 +22,7 @@ const Categories = () => {
                     {
                         categories.map((category) => (
                             <div key={category.id} className="flex justify-between items-center">
-                                <NavLink to={`/catnews/:${category.id}`} className='text-md font-semibold btn w-full'>{category.name}</NavLink>
+                                <NavLink to={`/catnews/${category.id}`} className='text-md font-semibold btn w-full'>{category.name}</NavLink>
 
                             </div>
                         ))

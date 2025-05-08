@@ -4,6 +4,7 @@ import NewsCards from '../HomeLayout/NewsCards';
 
 const CatNews = () => {
     const { id } = useParams();  // :4  
+    // console.log('test id', id)
     const [filterNews, setFilterNews] = useState([]); // this is the data that we are going to show in this page
 
     const data =  useLoaderData(); 
@@ -29,7 +30,7 @@ const CatNews = () => {
             return;
         }
         
-        const filterNewss = data.filter((news) => news.category_id == Number(id.slice(1)));
+        const filterNewss = data.filter((news) => news.category_id == id);
         // console.log(filterNews , id , filterNews[0]?.category_id); 
         // console.log(filterNews); // this is the data that we are going to show in this page
         setFilterNews(filterNewss); // this is the data that we are going to show in this page
