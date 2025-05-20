@@ -16,7 +16,7 @@ const Navbar = () => {
 
             <div className="flex justify-between">
                 <div> 
-                User : {user && user.email} {!user && <span className='text-red-500'>Guest Account</span>}
+                {user && user.displayName} {!user && <span className='text-red-500'>Guest Account</span>}
                 </div>
                 <div>
                     <NavLink to="/" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</NavLink>
@@ -29,7 +29,7 @@ const Navbar = () => {
                     }
 
                     <Link to="/" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                        <img className='inline-block' src={userlogo} alt="" />
+                        <img className='w-14 h-14 rounded-full inline-block' src={`${user ? user.photoURL : userlogo}`} alt="" />
                     </Link>
                 </div>
             </div>
